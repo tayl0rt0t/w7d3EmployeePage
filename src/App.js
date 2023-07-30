@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import HomePage from './pages/HomePage';
 import './App.css';
-
+import EmployeePage from './pages/EmployeePage';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display:'flex', justifyContent:'center', flexdirection:'row', alignContent:'center', fontFamily:'monospace'}} className='App'>
+      <div style={{display:'flex', justifyContent:'center', marginTop:'200px'}}>
+        <HomePage />
+      </div>
+      <div style={{display:'flex', justifyContent:'center', marginTop:'200px'}}>
+        <EmployeePage />
+      </div>
     </div>
   );
 }
